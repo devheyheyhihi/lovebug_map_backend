@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: lovebug-map-backend
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: "8000"
+      - key: MONGODB_URL
+        sync: false  # 환경 변수에서 설정
+      - key: ALLOWED_ORIGINS
+        value: "https://lovebug-map.vercel.app,http://localhost:3000,http://localhost:3001"
+      - key: ENVIRONMENT
+        value: "production"
+      - key: LOG_LEVEL
+        value: "INFO" 

@@ -1,0 +1,13 @@
+INFO:     Will watch for changes in these directories: ['/Users/sinseonghyeon/Documents/GitHub/03-personal-learning/personal-project/lovebug_map/backend']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [11407] using StatReload
+WARNING:app.main:정적 파일 디렉토리 'static'가 존재하지 않습니다. 정적 파일 서빙을 건너뜁니다.
+INFO:     Started server process [11420]
+INFO:     Waiting for application startup.
+WARNING:app.crawlers.twitter_crawler:트위터 API 토큰이 설정되지 않았습니다. 웹 스크래핑 모드로 실행됩니다.
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "crawl_and_update" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:app.main:러브버그 맵 백엔드 시작됨
+INFO:     Application startup complete.
+INFO:     127.0.0.1:61316 - "GET /health HTTP/1.1" 200 OK
